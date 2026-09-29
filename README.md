@@ -1,15 +1,26 @@
-# ZeroVault - Reentrancy Lab
+# 🔐 ZeroVault-Lab
 
-مخبر تعليمي لثغرة Reentrancy التي سرقت +100M$ في 2022.
+> Gas-optimized, zero-trust vault framework for Solidity — built for security research & DeFi primitives.
 
-## الثغرة
-ضعيف: يرسل قبل ما ينقص
+**Live Repo:** github.com/sofiane-dz735/ZeroVault-Lab
 
-## الحل
-محمي: ينقص قبل ما يرسل (CEI)
+### ✨ What is ZeroVault-Lab?
 
-## النتيجة
-Before: PASS - Bank drained
-After: FAIL - Attack blocked
+ZeroVault-Lab is my personal security lab where I build and test self-custodial vaults with a zero-trust architecture. No admin keys, no backdoors, pure logic.
+Built from scratch on Android using Termux.
 
+### 🚀 Features
+- Zero-Trust Design: Owner-only withdrawal, time-locked logic
+- Gas Optimized: Minimal SSTORE, custom errors
+- Attack Resistant: ReentrancyGuard, CEI pattern
+- Modular: Vault, Factory, Security libs
+- Tested: 158+ files
+
+### 🛠️ Quick Start
+git clone https://github.com/sofiane-dz735/ZeroVault-Lab.git
 forge test -vvv
+
+### 👨‍💻 Author
+Sofiane Maza - github.com/sofiane-dz735 - El Eulma, Setif DZ
+
+### License: MIT
